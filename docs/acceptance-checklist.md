@@ -9,7 +9,7 @@
 | 成员姓名 | 待填写 |
 | 学校和专业 | 待填写 |
 | 团队分工 | 待填写 |
-| 在线 Demo 链接 | 当前为本地 Demo，线上部署后填写 |
+| 在线 Demo 链接 | https://my.feishu.cn/docx/BAfJdZ8odoVn9FxPPw5c0pnon2e?from=from_copylink |
 | 演示视频链接 | https://my.feishu.cn/file/IGuHbFBDjoK9aNxD1IPcdWj9nah?from=from_copylink |
 | 代码仓库 | 如需提交，必须先确认不包含任何真实密钥 |
 
