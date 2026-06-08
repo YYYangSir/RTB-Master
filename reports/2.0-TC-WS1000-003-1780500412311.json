@@ -1,0 +1,49 @@
+{
+  "caseId": "TC-WS1000-003",
+  "status": "PASS",
+  "generatedAt": "2026-06-03T15:26:52.294Z",
+  "auctionId": "cmpy7m5zj000o8z935ctmib79",
+  "apiWasRunning": false,
+  "wsCount": 1000,
+  "bidderCount": 20,
+  "minutes": 10,
+  "intervalSec": 10,
+  "connected": 1000,
+  "snapshots": 1000,
+  "connectionRate": 1,
+  "connectionDurationMs": 1230.72,
+  "acceptedBids": 60,
+  "bidFailures": 0,
+  "bidStatusCounts": {
+    "201": 60
+  },
+  "bidP95Ms": 88.32,
+  "bidMaxMs": 125.96,
+  "expectedMessages": 60000,
+  "receivedMessages": 60000,
+  "arrivalRate": 1,
+  "avgBroadcastLatencyMs": 18.7,
+  "p95BroadcastLatencyMs": 35,
+  "p99BroadcastLatencyMs": 48,
+  "maxBroadcastLatencyMs": 81,
+  "priceErrorCount": 0,
+  "leaderboardErrorCount": 0,
+  "disconnectEvents": 0,
+  "finalHttp": {
+    "currentPriceCent": 6000,
+    "leaderUserId": "cmpy7m5yr000j8z93kjejxlbg",
+    "status": "RUNNING"
+  },
+  "finalLeaderboard": {
+    "topUserId": "cmpy7m5yr000j8z93kjejxlbg",
+    "topAmountCent": 6000
+  },
+  "finalWebSocket": {
+    "currentPriceCent": 6000,
+    "leaderUserId": "cmpy7m5yr000j8z93kjejxlbg",
+    "topUserId": "cmpy7m5yr000j8z93kjejxlbg",
+    "topAmountCent": 6000
+  },
+  "finalConsistent": true,
+  "healthAfter": true
+}

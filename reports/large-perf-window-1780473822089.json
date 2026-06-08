@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-06-03T08:03:39.912Z",
+  "wsCount": 1000,
+  "stableMinutes": 30,
+  "results": [
+    {
+      "caseId": "TC-PERF-004",
+      "status": "PASS",
+      "connected": 1000,
+      "total": 1000,
+      "durationMs": 1185.26,
+      "broadcastSmoke": "sent"
+    }
+  ]
+}

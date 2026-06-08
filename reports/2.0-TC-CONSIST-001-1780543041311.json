@@ -1,0 +1,161 @@
+{
+  "caseId": "TC-CONSIST-001",
+  "status": "PASS",
+  "generatedAt": "2026-06-04T03:17:21.309Z",
+  "users": 100,
+  "rounds": 10,
+  "incrementCent": 100,
+  "capPriceCent": 1000,
+  "auctionId": "cmpyxcntb002w8z65fc9ga3ob",
+  "apiWasRunning": false,
+  "roundsResult": [
+    {
+      "targetAmountCent": 100,
+      "success": 1,
+      "businessRejects": 99,
+      "systemErrors": 0,
+      "statuses": {
+        "201": 1,
+        "400": 99
+      }
+    },
+    {
+      "targetAmountCent": 200,
+      "success": 1,
+      "businessRejects": 99,
+      "systemErrors": 0,
+      "statuses": {
+        "201": 1,
+        "400": 99
+      }
+    },
+    {
+      "targetAmountCent": 300,
+      "success": 1,
+      "businessRejects": 99,
+      "systemErrors": 0,
+      "statuses": {
+        "201": 1,
+        "400": 99
+      }
+    },
+    {
+      "targetAmountCent": 400,
+      "success": 1,
+      "businessRejects": 99,
+      "systemErrors": 0,
+      "statuses": {
+        "201": 1,
+        "400": 99
+      }
+    },
+    {
+      "targetAmountCent": 500,
+      "success": 1,
+      "businessRejects": 99,
+      "systemErrors": 0,
+      "statuses": {
+        "201": 1,
+        "400": 99
+      }
+    },
+    {
+      "targetAmountCent": 600,
+      "success": 1,
+      "businessRejects": 99,
+      "systemErrors": 0,
+      "statuses": {
+        "201": 1,
+        "400": 99
+      }
+    },
+    {
+      "targetAmountCent": 700,
+      "success": 1,
+      "businessRejects": 99,
+      "systemErrors": 0,
+      "statuses": {
+        "201": 1,
+        "400": 99
+      }
+    },
+    {
+      "targetAmountCent": 800,
+      "success": 1,
+      "businessRejects": 99,
+      "systemErrors": 0,
+      "statuses": {
+        "201": 1,
+        "400": 99
+      }
+    },
+    {
+      "targetAmountCent": 900,
+      "success": 1,
+      "businessRejects": 99,
+      "systemErrors": 0,
+      "statuses": {
+        "201": 1,
+        "400": 99
+      }
+    },
+    {
+      "targetAmountCent": 1000,
+      "success": 1,
+      "businessRejects": 99,
+      "systemErrors": 0,
+      "statuses": {
+        "201": 1,
+        "400": 99
+      }
+    }
+  ],
+  "totalSuccess": 10,
+  "totalSystemErrors": 0,
+  "mysqlBidCount": 10,
+  "mysqlOrderCount": 1,
+  "wsBidAcceptedEvents": 10,
+  "wsAuctionEndedEvents": 1,
+  "mysql": {
+    "currentPriceCent": 1000,
+    "leaderUserId": "cmpyxcnm300028z65jz7vuddz",
+    "status": "SOLD",
+    "highestBidAmountCent": 1000,
+    "highestBidUserId": "cmpyxcnm300028z65jz7vuddz",
+    "orderAmountCent": 1000,
+    "orderWinnerUserId": "cmpyxcnm300028z65jz7vuddz"
+  },
+  "redis": {
+    "currentPriceCent": 1000,
+    "leaderUserId": "cmpyxcnm300028z65jz7vuddz",
+    "status": "SOLD",
+    "leaderboardTopUserId": "cmpyxcnm300028z65jz7vuddz",
+    "leaderboardTopAmountCent": 1000
+  },
+  "http": {
+    "currentPriceCent": 1000,
+    "leaderUserId": "cmpyxcnm300028z65jz7vuddz",
+    "status": "SOLD",
+    "orderAmountCent": 1000,
+    "orderWinnerUserId": "cmpyxcnm300028z65jz7vuddz",
+    "leaderboardTopUserId": "cmpyxcnm300028z65jz7vuddz",
+    "leaderboardTopAmountCent": 1000
+  },
+  "websocket": {
+    "currentPriceCent": 1000,
+    "leaderUserId": "cmpyxcnm300028z65jz7vuddz",
+    "status": "SOLD",
+    "leaderboardTopUserId": "cmpyxcnm300028z65jz7vuddz",
+    "leaderboardTopAmountCent": 1000
+  },
+  "checks": {
+    "perRoundAtMostOneSuccess": true,
+    "totalSuccessEqualsRounds": true,
+    "noSystemErrors": true,
+    "mysqlBidCountEqualsRounds": true,
+    "priceConsistent": true,
+    "leaderConsistent": true,
+    "statusConsistent": true,
+    "orderConsistent": true
+  }
+}

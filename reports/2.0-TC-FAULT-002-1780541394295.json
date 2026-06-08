@@ -1,0 +1,115 @@
+{
+  "caseId": "TC-FAULT-002",
+  "status": "PASS",
+  "generatedAt": "2026-06-04T02:49:54.293Z",
+  "auctionId": "cmpywd9wd000b8z8gb2ath2rs",
+  "apiWasRunning": false,
+  "mysqlContainer": "auction-mysql",
+  "docker": {
+    "stopOutput": "auction-mysql",
+    "startOutput": "auction-mysql"
+  },
+  "initialBid": {
+    "ok": true,
+    "status": 201,
+    "latencyMs": 13.42
+  },
+  "beforeFaultMysql": {
+    "currentPriceCent": 100,
+    "leaderUserId": "cmpywd9v800018z8gzqkguz4v",
+    "status": "RUNNING",
+    "version": 2,
+    "bidCount": 1,
+    "highestBidAmountCent": 100,
+    "highestBidUserId": "cmpywd9v800018z8gzqkguz4v",
+    "orderCount": 0,
+    "orderAmountCent": null,
+    "orderWinnerUserId": null
+  },
+  "beforeFaultRedis": {
+    "currentPriceCent": 100,
+    "leaderUserId": "cmpywd9v800018z8gzqkguz4v",
+    "status": "RUNNING",
+    "version": 2,
+    "leaderboardTopUserId": "cmpywd9v800018z8gzqkguz4v",
+    "leaderboardTopAmountCent": 100
+  },
+  "faultBid": {
+    "ok": false,
+    "status": 503,
+    "latencyMs": 4.38,
+    "message": "服务繁忙，请稍后重试"
+  },
+  "redisDuringFault": {
+    "currentPriceCent": 100,
+    "leaderUserId": "cmpywd9v800018z8gzqkguz4v",
+    "status": "RUNNING",
+    "version": 2,
+    "leaderboardTopUserId": "cmpywd9v800018z8gzqkguz4v",
+    "leaderboardTopAmountCent": 100
+  },
+  "afterRecoveryMysql": {
+    "currentPriceCent": 100,
+    "leaderUserId": "cmpywd9v800018z8gzqkguz4v",
+    "status": "RUNNING",
+    "version": 2,
+    "bidCount": 1,
+    "highestBidAmountCent": 100,
+    "highestBidUserId": "cmpywd9v800018z8gzqkguz4v",
+    "orderCount": 0,
+    "orderAmountCent": null,
+    "orderWinnerUserId": null
+  },
+  "afterRecoveryRedis": {
+    "currentPriceCent": 100,
+    "leaderUserId": "cmpywd9v800018z8gzqkguz4v",
+    "status": "RUNNING",
+    "version": 2,
+    "leaderboardTopUserId": "cmpywd9v800018z8gzqkguz4v",
+    "leaderboardTopAmountCent": 100
+  },
+  "recoveryBid": {
+    "ok": true,
+    "status": 201,
+    "latencyMs": 33.49,
+    "message": null
+  },
+  "finalMysql": {
+    "currentPriceCent": 300,
+    "leaderUserId": "cmpywd9vl00078z8gqgqvbocc",
+    "status": "RUNNING",
+    "version": 3,
+    "bidCount": 2,
+    "highestBidAmountCent": 300,
+    "highestBidUserId": "cmpywd9vl00078z8gqgqvbocc",
+    "orderCount": 0,
+    "orderAmountCent": null,
+    "orderWinnerUserId": null
+  },
+  "finalRedis": {
+    "currentPriceCent": 300,
+    "leaderUserId": "cmpywd9vl00078z8gqgqvbocc",
+    "status": "RUNNING",
+    "version": 3,
+    "leaderboardTopUserId": "cmpywd9vl00078z8gqgqvbocc",
+    "leaderboardTopAmountCent": 300
+  },
+  "finalHttp": {
+    "ok": true,
+    "statusCode": 200,
+    "currentPriceCent": 300,
+    "leaderUserId": "cmpywd9vl00078z8gqgqvbocc",
+    "leaderboardTopUserId": "cmpywd9vl00078z8gqgqvbocc",
+    "leaderboardTopAmountCent": 300
+  },
+  "checks": {
+    "noFalseSuccess": true,
+    "redisAdvancedDuringMysqlFault": false,
+    "mysqlChangedDuringFaultAfterRecovery": false,
+    "inconsistentAfterRecovery": false,
+    "recoveryBidOk": true,
+    "finalConsistent": true,
+    "noWrongOrder": true,
+    "healthAfter": true
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "douyin-live-auction-system",
+  "version": "0.1.0",
+  "private": true,
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@nestjs/core",
+      "@prisma/client",
+      "@prisma/engines",
+      "prisma",
+      "unrs-resolver"
+    ]
+  },
+  "scripts": {
+    "dev": "pnpm --parallel --filter \"./apps/*\" dev",
+    "build": "pnpm --recursive build",
+    "lint": "pnpm --recursive lint",
+    "test": "pnpm --recursive test",
+    "smoke": "pnpm build && node scripts/smoke-auction-flow.cjs",
+    "e2e": "pnpm build && node scripts/e2e-browser-flow.cjs",
+    "perf:baseline": "pnpm build && node scripts/perf-baseline.cjs",
+    "env:setup": "bash scripts/setup-local-env.sh",
+    "db:generate": "pnpm --filter api-server prisma:generate",
+    "db:migrate": "pnpm --filter api-server prisma:migrate",
+    "db:studio": "pnpm --filter api-server prisma:studio",
+    "env:check": "bash scripts/check-environment.sh"
+  }
+}

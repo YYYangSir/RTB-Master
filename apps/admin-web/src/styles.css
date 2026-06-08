@@ -1,0 +1,81 @@
+:root {
+  color: #1f2937;
+  background: #f5f7fb;
+  font-family: Inter, system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; }
+.page { max-width: 1180px; margin: auto; padding: 36px 20px; }
+header { margin-bottom: 20px; }
+h1 { margin: 6px 0 12px; }
+h2 { margin-top: 0; }
+.eyebrow, .muted { color: #64748b; }
+.status { display: inline-block; padding: 6px 10px; border-radius: 999px; font-size: 13px; }
+.online { color: #166534; background: #dcfce7; }
+.offline { color: #991b1b; background: #fee2e2; }
+.panel { margin: 16px 0; padding: 22px; background: white; border-radius: 14px; box-shadow: 0 6px 22px #dbe3ef; }
+.steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 18px 0; }
+.step { display: flex; align-items: center; gap: 9px; padding: 13px; color: #94a3b8; border-radius: 10px; background: #e2e8f0; }
+.step b { display: grid; width: 25px; height: 25px; place-items: center; border-radius: 50%; background: #cbd5e1; }
+.step.active { color: #9f1239; background: #ffe4e6; }
+.step.active b { color: white; background: #e11d48; }
+.section-title { display: flex; align-items: center; gap: 10px; }
+.section-title span { color: #e11d48; font-size: 12px; font-weight: 700; }
+.section-title h2 { margin: 0; }
+.load-auction { display: flex; align-items: end; gap: 10px; margin: 16px 0 20px; padding: 12px; border-radius: 10px; background: #f8fafc; }
+.load-auction label { flex: 1; }
+.auction-records { display: grid; margin-top: 14px; gap: 9px; }
+.auction-record { display: flex; align-items: center; justify-content: space-between; gap: 12px; border: 1px solid #e2e8f0; background: #f8fafc; text-align: left; }
+.auction-record:hover, .auction-record.selected { border-color: #fb7185; background: #fff1f2; }
+.auction-record span { display: grid; gap: 4px; }
+.auction-record small { color: #64748b; }
+.auction-record .state { font-size: 14px; }
+.pagination { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: 14px; color: #64748b; font-size: 14px; }
+.form-grid, .metrics, .detail-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+label, article { display: flex; flex-direction: column; gap: 7px; }
+.wide { grid-column: span 2; }
+input, textarea { padding: 10px; border: 1px solid #cbd5e1; border-radius: 7px; }
+textarea { min-height: 72px; resize: vertical; }
+button { padding: 11px 16px; border: 0; border-radius: 8px; cursor: pointer; }
+button:disabled { cursor: not-allowed; opacity: .5; }
+.primary { color: white; background: #e11d48; align-self: end; }
+.danger { color: white; background: #991b1b; }
+.actions { display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
+.row { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+article { padding: 14px; border-radius: 10px; background: #f8fafc; }
+article span { color: #64748b; font-size: 13px; }
+article strong { font-size: 19px; }
+.notice { margin-bottom: 0; color: #475569; }
+.leaderboard { margin-top: 18px; }
+.dashboard-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.leaderboard h3, .event-log h3 { margin-bottom: 8px; }
+.leaderboard ol { margin: 0; padding-left: 28px; }
+.leaderboard li { padding: 6px 4px; }
+.leaderboard li span { display: inline-block; min-width: 160px; }
+.event-log { margin-top: 18px; }
+.event-log ul { margin: 0; padding-left: 18px; color: #475569; }
+.event-log li { padding: 5px 0; }
+.auction-id { word-break: break-all; }
+.state { color: #475569; }
+.state.running { color: #e11d48; }
+.state.sold { color: #166534; }
+.state.cancelled { color: #991b1b; }
+.detail-grid { margin-top: 18px; }
+.detail-grid article strong { font-size: 15px; }
+.order-summary { display: flex; flex-wrap: wrap; gap: 10px 18px; margin-top: 16px; padding: 14px; border-radius: 10px; background: #fff1f2; }
+.order-summary strong { width: 100%; }
+.order-summary span { color: #475569; }
+.bid-table-wrap { overflow-x: auto; }
+.bid-table { width: 100%; border-collapse: collapse; }
+.bid-table th, .bid-table td { padding: 10px; border-bottom: 1px solid #e2e8f0; text-align: left; }
+.bid-table th { color: #64748b; font-size: 13px; }
+@media (max-width: 760px) {
+  .form-grid, .metrics, .detail-grid { grid-template-columns: 1fr 1fr; }
+  .wide { grid-column: span 2; }
+  .row { align-items: flex-start; flex-direction: column; }
+  .actions { justify-content: flex-start; }
+  .dashboard-grid { grid-template-columns: 1fr; }
+  .load-auction { align-items: stretch; flex-direction: column; }
+  .pagination { align-items: flex-start; flex-direction: column; }
+}

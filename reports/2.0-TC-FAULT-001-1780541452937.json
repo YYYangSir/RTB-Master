@@ -1,0 +1,139 @@
+{
+  "caseId": "TC-FAULT-001",
+  "status": "PASS",
+  "generatedAt": "2026-06-04T02:50:52.934Z",
+  "auctionId": "cmpywefak00078zwmai3nlj7t",
+  "apiWasRunning": false,
+  "redisContainer": "auction-redis",
+  "docker": {
+    "stopOutput": "auction-redis",
+    "startOutput": "auction-redis"
+  },
+  "initialBid": {
+    "ok": true,
+    "status": 201,
+    "latencyMs": 12.11
+  },
+  "beforeFault": {
+    "mysql": {
+      "currentPriceCent": 100,
+      "leaderUserId": "cmpywef9c00018zwm8gx8599s",
+      "status": "RUNNING",
+      "bidCount": 1,
+      "orderCount": 0,
+      "orderAmountCent": null,
+      "orderWinnerUserId": null
+    },
+    "redis": {
+      "currentPriceCent": 100,
+      "leaderUserId": "cmpywef9c00018zwm8gx8599s",
+      "status": "RUNNING",
+      "leaderboardTopUserId": "cmpywef9c00018zwm8gx8599s",
+      "leaderboardTopAmountCent": 100
+    },
+    "http": {
+      "ok": true,
+      "statusCode": 200,
+      "currentPriceCent": 100,
+      "leaderUserId": "cmpywef9c00018zwm8gx8599s",
+      "status": "RUNNING",
+      "orderAmountCent": null,
+      "orderWinnerUserId": null,
+      "leaderboardTopUserId": "cmpywef9c00018zwm8gx8599s",
+      "leaderboardTopAmountCent": 100
+    }
+  },
+  "faultBids": [
+    {
+      "ok": false,
+      "status": "CLIENT_ERROR",
+      "latencyMs": 8002.24,
+      "message": "This operation was aborted"
+    },
+    {
+      "ok": false,
+      "status": 500,
+      "latencyMs": 101.24,
+      "message": "Internal server error"
+    }
+  ],
+  "duringFaultMysql": {
+    "currentPriceCent": 100,
+    "leaderUserId": "cmpywef9c00018zwm8gx8599s",
+    "status": "RUNNING",
+    "bidCount": 1,
+    "orderCount": 0
+  },
+  "afterRecoveryBeforeBid": {
+    "mysql": {
+      "currentPriceCent": 100,
+      "leaderUserId": "cmpywef9c00018zwm8gx8599s",
+      "status": "RUNNING",
+      "bidCount": 1,
+      "orderCount": 0,
+      "orderAmountCent": null,
+      "orderWinnerUserId": null
+    },
+    "redis": {
+      "currentPriceCent": 100,
+      "leaderUserId": "cmpywef9c00018zwm8gx8599s",
+      "status": "RUNNING",
+      "leaderboardTopUserId": "cmpywef9c00018zwm8gx8599s",
+      "leaderboardTopAmountCent": 100
+    },
+    "http": {
+      "ok": true,
+      "statusCode": 200,
+      "currentPriceCent": 100,
+      "leaderUserId": "cmpywef9c00018zwm8gx8599s",
+      "status": "RUNNING",
+      "orderAmountCent": null,
+      "orderWinnerUserId": null,
+      "leaderboardTopUserId": "cmpywef9c00018zwm8gx8599s",
+      "leaderboardTopAmountCent": 100
+    }
+  },
+  "recoveryBid": {
+    "ok": true,
+    "status": 201,
+    "latencyMs": 30.29,
+    "message": null
+  },
+  "afterRecoveryBid": {
+    "mysql": {
+      "currentPriceCent": 200,
+      "leaderUserId": "cmpywef9i00028zwmiqdmqclx",
+      "status": "RUNNING",
+      "bidCount": 2,
+      "orderCount": 0,
+      "orderAmountCent": null,
+      "orderWinnerUserId": null
+    },
+    "redis": {
+      "currentPriceCent": 200,
+      "leaderUserId": "cmpywef9i00028zwmiqdmqclx",
+      "status": "RUNNING",
+      "leaderboardTopUserId": "cmpywef9i00028zwmiqdmqclx",
+      "leaderboardTopAmountCent": 200
+    },
+    "http": {
+      "ok": true,
+      "statusCode": 200,
+      "currentPriceCent": 200,
+      "leaderUserId": "cmpywef9i00028zwmiqdmqclx",
+      "status": "RUNNING",
+      "orderAmountCent": null,
+      "orderWinnerUserId": null,
+      "leaderboardTopUserId": "cmpywef9i00028zwmiqdmqclx",
+      "leaderboardTopAmountCent": 200
+    }
+  },
+  "checks": {
+    "noFaultBidSuccess": true,
+    "noDirtyDuringFault": true,
+    "recoveryOk": true,
+    "consistencyOk": true,
+    "noDuplicateOrder": true,
+    "healthAfter": true
+  }
+}

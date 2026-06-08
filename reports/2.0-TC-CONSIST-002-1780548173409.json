@@ -1,0 +1,131 @@
+{
+  "caseId": "TC-CONSIST-002",
+  "status": "PASS",
+  "generatedAt": "2026-06-04T04:42:53.407Z",
+  "auctionId": "cmpz0epqe00088z57opz2gevf",
+  "apiWasRunning": false,
+  "preBids": [
+    {
+      "ok": true,
+      "status": 201,
+      "latencyMs": 12.89
+    },
+    {
+      "ok": true,
+      "status": 201,
+      "latencyMs": 24.52
+    },
+    {
+      "ok": true,
+      "status": 201,
+      "latencyMs": 46.52
+    },
+    {
+      "ok": true,
+      "status": 201,
+      "latencyMs": 43.15
+    },
+    {
+      "ok": true,
+      "status": 201,
+      "latencyMs": 40.19
+    },
+    {
+      "ok": true,
+      "status": 201,
+      "latencyMs": 36.93
+    },
+    {
+      "ok": true,
+      "status": 201,
+      "latencyMs": 40.52
+    },
+    {
+      "ok": true,
+      "status": 201,
+      "latencyMs": 41.26
+    },
+    {
+      "ok": true,
+      "status": 201,
+      "latencyMs": 35.61
+    }
+  ],
+  "beforeCapMysql": {
+    "currentPriceCent": 900,
+    "leaderUserId": "cmpz0eppd00018z57ki32a626",
+    "status": "RUNNING",
+    "version": 10,
+    "bidCount": 9,
+    "highestBidAmountCent": 900,
+    "highestBidUserId": "cmpz0eppd00018z57ki32a626",
+    "orderCount": 0,
+    "orderAmountCent": null,
+    "orderWinnerUserId": null
+  },
+  "capBid": {
+    "ok": true,
+    "status": 201,
+    "latencyMs": 39.09
+  },
+  "afterSoldBid": {
+    "ok": false,
+    "status": 400,
+    "message": "auction is not running"
+  },
+  "mysql": {
+    "currentPriceCent": 1000,
+    "leaderUserId": "cmpz0eppq00038z57w1oae3xm",
+    "status": "SOLD",
+    "version": 11,
+    "bidCount": 10,
+    "highestBidAmountCent": 1000,
+    "highestBidUserId": "cmpz0eppq00038z57w1oae3xm",
+    "orderCount": 1,
+    "orderAmountCent": 1000,
+    "orderWinnerUserId": "cmpz0eppq00038z57w1oae3xm"
+  },
+  "redis": {
+    "currentPriceCent": 1000,
+    "leaderUserId": "cmpz0eppq00038z57w1oae3xm",
+    "status": "SOLD",
+    "version": 11,
+    "leaderboardTopUserId": "cmpz0eppq00038z57w1oae3xm",
+    "leaderboardTopAmountCent": 1000
+  },
+  "http": {
+    "detailStatus": 200,
+    "currentPriceCent": 1000,
+    "leaderUserId": "cmpz0eppq00038z57w1oae3xm",
+    "status": "SOLD",
+    "orderAmountCent": 1000,
+    "orderWinnerUserId": "cmpz0eppq00038z57w1oae3xm",
+    "leaderboardTopAmountCent": 1000,
+    "leaderboardTopUserId": "cmpz0eppq00038z57w1oae3xm"
+  },
+  "websocket": {
+    "bidAcceptedEvents": 10,
+    "auctionEndedEvents": 1,
+    "currentPriceCent": 1000,
+    "leaderUserId": "cmpz0eppq00038z57w1oae3xm",
+    "status": "SOLD",
+    "orderAmountCent": 1000,
+    "orderWinnerUserId": "cmpz0eppq00038z57w1oae3xm",
+    "leaderboardTopAmountCent": 1000,
+    "leaderboardTopUserId": "cmpz0eppq00038z57w1oae3xm"
+  },
+  "checks": {
+    "preBidsAllOk": true,
+    "beforeCapAt900": true,
+    "capBidOk": true,
+    "afterSoldBidRejected": true,
+    "statusAllSold": true,
+    "priceAll1000": true,
+    "winnerAllSame": true,
+    "oneOrderOnly": true,
+    "bidCountIs10": true,
+    "websocketEndedReceived": true,
+    "httpOk": true,
+    "healthAfter": true
+  }
+}

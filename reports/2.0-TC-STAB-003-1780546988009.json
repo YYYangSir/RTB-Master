@@ -1,0 +1,56 @@
+{
+  "caseId": "TC-STAB-003",
+  "status": "PASS",
+  "generatedAt": "2026-06-04T04:23:08.007Z",
+  "users": 500,
+  "settleMs": 60000,
+  "auctionId": "cmpyzo00100048z5gi03kspgg",
+  "apiWasRunning": false,
+  "connectedCount": 500,
+  "connectionSuccessRate": 1,
+  "connectionDurationMs": 450.78,
+  "bid": {
+    "ok": true,
+    "status": 201,
+    "message": null
+  },
+  "before": {
+    "listenerPid": 99988,
+    "tcpEstablished": 2,
+    "rssKb": 134896,
+    "redis": {
+      "dbSize": 1570,
+      "keyspace": "# Keyspace\r\ndb0:keys=1570,expires=1471,avg_ttl=35882652,subexpiry=0"
+    },
+    "health": true
+  },
+  "during": {
+    "tcpEstablished": 1004,
+    "rssKb": 194992,
+    "redis": {
+      "dbSize": 1573,
+      "keyspace": "# Keyspace\r\ndb0:keys=1573,expires=1473,avg_ttl=35533473,subexpiry=0"
+    },
+    "health": true
+  },
+  "after": {
+    "tcpEstablished": 0,
+    "rssKb": 168960,
+    "redis": {
+      "dbSize": 1573,
+      "keyspace": "# Keyspace\r\ndb0:keys=1573,expires=1473,avg_ttl=35476215,subexpiry=0"
+    },
+    "health": true
+  },
+  "rssLimit": 233991,
+  "residualListener": null,
+  "checks": {
+    "connectionSuccessRateOk": true,
+    "bidOk": true,
+    "tcpConnectionsReleased": true,
+    "memoryNotGrowingAfterDisconnect": true,
+    "redisNotContinuingToGrow": true,
+    "apiHealthyAfterDisconnect": true,
+    "noResidualApiWhenStartedByScript": true
+  }
+}

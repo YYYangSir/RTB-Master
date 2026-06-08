@@ -1,0 +1,184 @@
+{
+  "caseId": "TC-MIX-003",
+  "status": "PASS",
+  "generatedAt": "2026-06-04T04:32:29.868Z",
+  "rooms": 3,
+  "usersPerRoom": 100,
+  "apiWasRunning": false,
+  "connectionDurationMs": 287.37,
+  "connectionSuccessRate": 1,
+  "crossRoomEventCount": 0,
+  "bidResults": {
+    "room1": [
+      {
+        "ok": true,
+        "status": 201,
+        "latencyMs": 11.38
+      },
+      {
+        "ok": true,
+        "status": 201,
+        "latencyMs": 19.06
+      }
+    ],
+    "room2": [
+      {
+        "ok": true,
+        "status": 201,
+        "latencyMs": 29.72
+      },
+      {
+        "ok": true,
+        "status": 201,
+        "latencyMs": 7
+      },
+      {
+        "ok": true,
+        "status": 201,
+        "latencyMs": 9.42
+      }
+    ],
+    "room3": [
+      {
+        "ok": true,
+        "status": 201,
+        "latencyMs": 6.07
+      }
+    ]
+  },
+  "cancelRoom3": {
+    "ok": true,
+    "status": 201
+  },
+  "roomSummaries": [
+    {
+      "roomIndex": 1,
+      "roomId": "cmpz01crm00028z8z3jjnzqz1",
+      "auctionId": "cmpz01crt00048z8zjkglmovr",
+      "expectedFinalStatus": "RUNNING",
+      "detail": {
+        "status": "RUNNING",
+        "currentPriceCent": 200,
+        "leaderUserId": "cmpz01d1j000e8z8zu0zr74zc",
+        "orderId": null,
+        "orderAmountCent": null,
+        "orderWinnerUserId": null,
+        "cancelReason": null
+      },
+      "leaderboardTop": {
+        "rank": 1,
+        "userId": "cmpz01d1j000e8z8zu0zr74zc",
+        "amountCent": 200,
+        "nickname": "2.0 TC-MIX-003 房间1 出价用户2"
+      },
+      "redis": {
+        "status": "RUNNING",
+        "currentPriceCent": 200,
+        "leaderUserId": "cmpz01d1j000e8z8zu0zr74zc",
+        "leaderboardTopUserId": "cmpz01d1j000e8z8zu0zr74zc",
+        "leaderboardTopAmountCent": 200
+      },
+      "metrics": {
+        "connected": 100,
+        "snapshots": 100,
+        "bidAccepted": 200,
+        "auctionExtended": 100,
+        "auctionEnded": 0,
+        "auctionCancelled": 0,
+        "crossRoomEvents": 0,
+        "broadcastP95Ms": 3,
+        "seenForeignAuctionIds": {}
+      }
+    },
+    {
+      "roomIndex": 2,
+      "roomId": "cmpz01csj00068z8z50ygigxt",
+      "auctionId": "cmpz01csn00088z8ze37d2fnv",
+      "expectedFinalStatus": "SOLD",
+      "detail": {
+        "status": "SOLD",
+        "currentPriceCent": 300,
+        "leaderUserId": "cmpz01d1q000i8z8z8icxcyge",
+        "orderId": "cmpz01d3u000x8z8zm38fhp3y",
+        "orderAmountCent": 300,
+        "orderWinnerUserId": "cmpz01d1q000i8z8z8icxcyge",
+        "cancelReason": null
+      },
+      "leaderboardTop": {
+        "rank": 1,
+        "userId": "cmpz01d1q000i8z8z8icxcyge",
+        "amountCent": 300,
+        "nickname": "2.0 TC-MIX-003 房间2 出价用户3"
+      },
+      "redis": {
+        "status": "SOLD",
+        "currentPriceCent": 300,
+        "leaderUserId": "cmpz01d1q000i8z8z8icxcyge",
+        "leaderboardTopUserId": "cmpz01d1q000i8z8z8icxcyge",
+        "leaderboardTopAmountCent": 300
+      },
+      "metrics": {
+        "connected": 100,
+        "snapshots": 100,
+        "bidAccepted": 300,
+        "auctionExtended": 0,
+        "auctionEnded": 100,
+        "auctionCancelled": 0,
+        "crossRoomEvents": 0,
+        "broadcastP95Ms": 2,
+        "seenForeignAuctionIds": {}
+      }
+    },
+    {
+      "roomIndex": 3,
+      "roomId": "cmpz01ct1000a8z8z3p9k1hmj",
+      "auctionId": "cmpz01ct4000c8z8zlpkoruv6",
+      "expectedFinalStatus": "CANCELLED",
+      "detail": {
+        "status": "CANCELLED",
+        "currentPriceCent": 100,
+        "leaderUserId": "cmpz01d1r000j8z8z8skk27a1",
+        "orderId": null,
+        "orderAmountCent": null,
+        "orderWinnerUserId": null,
+        "cancelReason": "TC-MIX-003 多房间隔离取消测试"
+      },
+      "leaderboardTop": {
+        "rank": 1,
+        "userId": "cmpz01d1r000j8z8z8skk27a1",
+        "amountCent": 100,
+        "nickname": "2.0 TC-MIX-003 房间3 出价用户1"
+      },
+      "redis": {
+        "status": "CANCELLED",
+        "currentPriceCent": 100,
+        "leaderUserId": "cmpz01d1r000j8z8z8skk27a1",
+        "leaderboardTopUserId": "cmpz01d1r000j8z8z8skk27a1",
+        "leaderboardTopAmountCent": 100
+      },
+      "metrics": {
+        "connected": 100,
+        "snapshots": 100,
+        "bidAccepted": 100,
+        "auctionExtended": 0,
+        "auctionEnded": 0,
+        "auctionCancelled": 100,
+        "crossRoomEvents": 0,
+        "broadcastP95Ms": 2,
+        "seenForeignAuctionIds": {}
+      }
+    }
+  ],
+  "checks": {
+    "connectionSuccessRateOk": true,
+    "allBidOk": true,
+    "cancelOk": true,
+    "noCrossRoomEvents": true,
+    "room1ExtensionIsolated": true,
+    "room2SoldIsolated": true,
+    "room3CancelIsolated": true,
+    "redisConsistent": true,
+    "broadcastP95Ok": true,
+    "healthAfter": true
+  }
+}

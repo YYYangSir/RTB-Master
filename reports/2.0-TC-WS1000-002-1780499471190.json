@@ -1,0 +1,624 @@
+{
+  "caseId": "TC-WS1000-002",
+  "status": "PASS",
+  "generatedAt": "2026-06-03T15:11:11.175Z",
+  "auctionId": "cmpy71zx500068zhqcrujhbfn",
+  "apiWasRunning": false,
+  "wsCount": 1000,
+  "minutes": 10,
+  "intervalSec": 5,
+  "connected": 1000,
+  "snapshots": 1000,
+  "connectionRate": 1,
+  "connectionDurationMs": 1104.06,
+  "acceptedBroadcasts": 119,
+  "bidFailures": 0,
+  "bidP95Ms": 76.58,
+  "expectedMessages": 119000,
+  "receivedMessages": 119000,
+  "arrivalRate": 1,
+  "avgLatencyMs": 17.35,
+  "p95LatencyMs": 32,
+  "p99LatencyMs": 49,
+  "maxLatencyMs": 74,
+  "outOfOrderCount": 0,
+  "disconnectEvents": 0,
+  "healthAfter": true,
+  "samples": [
+    {
+      "at": "2026-06-03T15:01:10.167Z",
+      "acceptedBroadcasts": 1,
+      "received": 1000
+    },
+    {
+      "at": "2026-06-03T15:01:15.224Z",
+      "acceptedBroadcasts": 2,
+      "received": 2000
+    },
+    {
+      "at": "2026-06-03T15:01:20.290Z",
+      "acceptedBroadcasts": 3,
+      "received": 3000
+    },
+    {
+      "at": "2026-06-03T15:01:25.344Z",
+      "acceptedBroadcasts": 4,
+      "received": 4000
+    },
+    {
+      "at": "2026-06-03T15:01:30.410Z",
+      "acceptedBroadcasts": 5,
+      "received": 5000
+    },
+    {
+      "at": "2026-06-03T15:01:35.479Z",
+      "acceptedBroadcasts": 6,
+      "received": 6000
+    },
+    {
+      "at": "2026-06-03T15:01:40.539Z",
+      "acceptedBroadcasts": 7,
+      "received": 7000
+    },
+    {
+      "at": "2026-06-03T15:01:45.613Z",
+      "acceptedBroadcasts": 8,
+      "received": 8000
+    },
+    {
+      "at": "2026-06-03T15:01:50.683Z",
+      "acceptedBroadcasts": 9,
+      "received": 9000
+    },
+    {
+      "at": "2026-06-03T15:01:55.733Z",
+      "acceptedBroadcasts": 10,
+      "received": 10000
+    },
+    {
+      "at": "2026-06-03T15:02:00.769Z",
+      "acceptedBroadcasts": 11,
+      "received": 11000
+    },
+    {
+      "at": "2026-06-03T15:02:05.833Z",
+      "acceptedBroadcasts": 12,
+      "received": 12000
+    },
+    {
+      "at": "2026-06-03T15:02:10.904Z",
+      "acceptedBroadcasts": 13,
+      "received": 13000
+    },
+    {
+      "at": "2026-06-03T15:02:15.947Z",
+      "acceptedBroadcasts": 14,
+      "received": 14000
+    },
+    {
+      "at": "2026-06-03T15:02:20.986Z",
+      "acceptedBroadcasts": 15,
+      "received": 15000
+    },
+    {
+      "at": "2026-06-03T15:02:26.043Z",
+      "acceptedBroadcasts": 16,
+      "received": 16000
+    },
+    {
+      "at": "2026-06-03T15:02:31.077Z",
+      "acceptedBroadcasts": 17,
+      "received": 17000
+    },
+    {
+      "at": "2026-06-03T15:02:36.168Z",
+      "acceptedBroadcasts": 18,
+      "received": 18000
+    },
+    {
+      "at": "2026-06-03T15:02:41.227Z",
+      "acceptedBroadcasts": 19,
+      "received": 19000
+    },
+    {
+      "at": "2026-06-03T15:02:46.287Z",
+      "acceptedBroadcasts": 20,
+      "received": 20000
+    },
+    {
+      "at": "2026-06-03T15:02:51.331Z",
+      "acceptedBroadcasts": 21,
+      "received": 21000
+    },
+    {
+      "at": "2026-06-03T15:02:56.386Z",
+      "acceptedBroadcasts": 22,
+      "received": 22000
+    },
+    {
+      "at": "2026-06-03T15:03:01.438Z",
+      "acceptedBroadcasts": 23,
+      "received": 23000
+    },
+    {
+      "at": "2026-06-03T15:03:06.473Z",
+      "acceptedBroadcasts": 24,
+      "received": 24000
+    },
+    {
+      "at": "2026-06-03T15:03:11.536Z",
+      "acceptedBroadcasts": 25,
+      "received": 25000
+    },
+    {
+      "at": "2026-06-03T15:03:16.594Z",
+      "acceptedBroadcasts": 26,
+      "received": 26000
+    },
+    {
+      "at": "2026-06-03T15:03:21.651Z",
+      "acceptedBroadcasts": 27,
+      "received": 27000
+    },
+    {
+      "at": "2026-06-03T15:03:26.698Z",
+      "acceptedBroadcasts": 28,
+      "received": 28000
+    },
+    {
+      "at": "2026-06-03T15:03:31.774Z",
+      "acceptedBroadcasts": 29,
+      "received": 29000
+    },
+    {
+      "at": "2026-06-03T15:03:36.811Z",
+      "acceptedBroadcasts": 30,
+      "received": 30000
+    },
+    {
+      "at": "2026-06-03T15:03:41.865Z",
+      "acceptedBroadcasts": 31,
+      "received": 31000
+    },
+    {
+      "at": "2026-06-03T15:03:46.902Z",
+      "acceptedBroadcasts": 32,
+      "received": 32000
+    },
+    {
+      "at": "2026-06-03T15:03:51.965Z",
+      "acceptedBroadcasts": 33,
+      "received": 33000
+    },
+    {
+      "at": "2026-06-03T15:03:57.018Z",
+      "acceptedBroadcasts": 34,
+      "received": 34000
+    },
+    {
+      "at": "2026-06-03T15:04:02.054Z",
+      "acceptedBroadcasts": 35,
+      "received": 35000
+    },
+    {
+      "at": "2026-06-03T15:04:07.117Z",
+      "acceptedBroadcasts": 36,
+      "received": 36000
+    },
+    {
+      "at": "2026-06-03T15:04:12.161Z",
+      "acceptedBroadcasts": 37,
+      "received": 37000
+    },
+    {
+      "at": "2026-06-03T15:04:17.226Z",
+      "acceptedBroadcasts": 38,
+      "received": 38000
+    },
+    {
+      "at": "2026-06-03T15:04:22.283Z",
+      "acceptedBroadcasts": 39,
+      "received": 39000
+    },
+    {
+      "at": "2026-06-03T15:04:27.360Z",
+      "acceptedBroadcasts": 40,
+      "received": 40000
+    },
+    {
+      "at": "2026-06-03T15:04:32.418Z",
+      "acceptedBroadcasts": 41,
+      "received": 41000
+    },
+    {
+      "at": "2026-06-03T15:04:37.525Z",
+      "acceptedBroadcasts": 42,
+      "received": 42000
+    },
+    {
+      "at": "2026-06-03T15:04:42.590Z",
+      "acceptedBroadcasts": 43,
+      "received": 43000
+    },
+    {
+      "at": "2026-06-03T15:04:47.668Z",
+      "acceptedBroadcasts": 44,
+      "received": 44000
+    },
+    {
+      "at": "2026-06-03T15:04:52.719Z",
+      "acceptedBroadcasts": 45,
+      "received": 45000
+    },
+    {
+      "at": "2026-06-03T15:04:57.793Z",
+      "acceptedBroadcasts": 46,
+      "received": 46000
+    },
+    {
+      "at": "2026-06-03T15:05:02.870Z",
+      "acceptedBroadcasts": 47,
+      "received": 47000
+    },
+    {
+      "at": "2026-06-03T15:05:07.933Z",
+      "acceptedBroadcasts": 48,
+      "received": 48000
+    },
+    {
+      "at": "2026-06-03T15:05:12.993Z",
+      "acceptedBroadcasts": 49,
+      "received": 49000
+    },
+    {
+      "at": "2026-06-03T15:05:18.069Z",
+      "acceptedBroadcasts": 50,
+      "received": 50000
+    },
+    {
+      "at": "2026-06-03T15:05:23.148Z",
+      "acceptedBroadcasts": 51,
+      "received": 51000
+    },
+    {
+      "at": "2026-06-03T15:05:28.216Z",
+      "acceptedBroadcasts": 52,
+      "received": 52000
+    },
+    {
+      "at": "2026-06-03T15:05:33.275Z",
+      "acceptedBroadcasts": 53,
+      "received": 53000
+    },
+    {
+      "at": "2026-06-03T15:05:38.346Z",
+      "acceptedBroadcasts": 54,
+      "received": 54000
+    },
+    {
+      "at": "2026-06-03T15:05:43.396Z",
+      "acceptedBroadcasts": 55,
+      "received": 55000
+    },
+    {
+      "at": "2026-06-03T15:05:48.456Z",
+      "acceptedBroadcasts": 56,
+      "received": 56000
+    },
+    {
+      "at": "2026-06-03T15:05:53.533Z",
+      "acceptedBroadcasts": 57,
+      "received": 57000
+    },
+    {
+      "at": "2026-06-03T15:05:58.610Z",
+      "acceptedBroadcasts": 58,
+      "received": 58000
+    },
+    {
+      "at": "2026-06-03T15:06:03.686Z",
+      "acceptedBroadcasts": 59,
+      "received": 59000
+    },
+    {
+      "at": "2026-06-03T15:06:08.754Z",
+      "acceptedBroadcasts": 60,
+      "received": 60000
+    },
+    {
+      "at": "2026-06-03T15:06:13.815Z",
+      "acceptedBroadcasts": 61,
+      "received": 61000
+    },
+    {
+      "at": "2026-06-03T15:06:18.888Z",
+      "acceptedBroadcasts": 62,
+      "received": 62000
+    },
+    {
+      "at": "2026-06-03T15:06:23.952Z",
+      "acceptedBroadcasts": 63,
+      "received": 63000
+    },
+    {
+      "at": "2026-06-03T15:06:29.021Z",
+      "acceptedBroadcasts": 64,
+      "received": 64000
+    },
+    {
+      "at": "2026-06-03T15:06:34.098Z",
+      "acceptedBroadcasts": 65,
+      "received": 65000
+    },
+    {
+      "at": "2026-06-03T15:06:39.161Z",
+      "acceptedBroadcasts": 66,
+      "received": 66000
+    },
+    {
+      "at": "2026-06-03T15:06:44.245Z",
+      "acceptedBroadcasts": 67,
+      "received": 67000
+    },
+    {
+      "at": "2026-06-03T15:06:49.301Z",
+      "acceptedBroadcasts": 68,
+      "received": 68000
+    },
+    {
+      "at": "2026-06-03T15:06:54.375Z",
+      "acceptedBroadcasts": 69,
+      "received": 69000
+    },
+    {
+      "at": "2026-06-03T15:06:59.445Z",
+      "acceptedBroadcasts": 70,
+      "received": 70000
+    },
+    {
+      "at": "2026-06-03T15:07:04.517Z",
+      "acceptedBroadcasts": 71,
+      "received": 71000
+    },
+    {
+      "at": "2026-06-03T15:07:09.591Z",
+      "acceptedBroadcasts": 72,
+      "received": 72000
+    },
+    {
+      "at": "2026-06-03T15:07:14.661Z",
+      "acceptedBroadcasts": 73,
+      "received": 73000
+    },
+    {
+      "at": "2026-06-03T15:07:19.738Z",
+      "acceptedBroadcasts": 74,
+      "received": 74000
+    },
+    {
+      "at": "2026-06-03T15:07:24.803Z",
+      "acceptedBroadcasts": 75,
+      "received": 75000
+    },
+    {
+      "at": "2026-06-03T15:07:29.860Z",
+      "acceptedBroadcasts": 76,
+      "received": 76000
+    },
+    {
+      "at": "2026-06-03T15:07:34.927Z",
+      "acceptedBroadcasts": 77,
+      "received": 77000
+    },
+    {
+      "at": "2026-06-03T15:07:39.997Z",
+      "acceptedBroadcasts": 78,
+      "received": 78000
+    },
+    {
+      "at": "2026-06-03T15:07:45.056Z",
+      "acceptedBroadcasts": 79,
+      "received": 79000
+    },
+    {
+      "at": "2026-06-03T15:07:50.132Z",
+      "acceptedBroadcasts": 80,
+      "received": 80000
+    },
+    {
+      "at": "2026-06-03T15:07:55.188Z",
+      "acceptedBroadcasts": 81,
+      "received": 81000
+    },
+    {
+      "at": "2026-06-03T15:08:00.262Z",
+      "acceptedBroadcasts": 82,
+      "received": 82000
+    },
+    {
+      "at": "2026-06-03T15:08:05.330Z",
+      "acceptedBroadcasts": 83,
+      "received": 83000
+    },
+    {
+      "at": "2026-06-03T15:08:10.365Z",
+      "acceptedBroadcasts": 84,
+      "received": 84000
+    },
+    {
+      "at": "2026-06-03T15:08:15.434Z",
+      "acceptedBroadcasts": 85,
+      "received": 85000
+    },
+    {
+      "at": "2026-06-03T15:08:20.500Z",
+      "acceptedBroadcasts": 86,
+      "received": 86000
+    },
+    {
+      "at": "2026-06-03T15:08:25.571Z",
+      "acceptedBroadcasts": 87,
+      "received": 87000
+    },
+    {
+      "at": "2026-06-03T15:08:30.640Z",
+      "acceptedBroadcasts": 88,
+      "received": 88000
+    },
+    {
+      "at": "2026-06-03T15:08:35.707Z",
+      "acceptedBroadcasts": 89,
+      "received": 89000
+    },
+    {
+      "at": "2026-06-03T15:08:40.770Z",
+      "acceptedBroadcasts": 90,
+      "received": 90000
+    },
+    {
+      "at": "2026-06-03T15:08:45.851Z",
+      "acceptedBroadcasts": 91,
+      "received": 91000
+    },
+    {
+      "at": "2026-06-03T15:08:50.903Z",
+      "acceptedBroadcasts": 92,
+      "received": 92000
+    },
+    {
+      "at": "2026-06-03T15:08:55.972Z",
+      "acceptedBroadcasts": 93,
+      "received": 93000
+    },
+    {
+      "at": "2026-06-03T15:09:01.044Z",
+      "acceptedBroadcasts": 94,
+      "received": 94000
+    },
+    {
+      "at": "2026-06-03T15:09:06.113Z",
+      "acceptedBroadcasts": 95,
+      "received": 95000
+    },
+    {
+      "at": "2026-06-03T15:09:11.187Z",
+      "acceptedBroadcasts": 96,
+      "received": 96000
+    },
+    {
+      "at": "2026-06-03T15:09:16.228Z",
+      "acceptedBroadcasts": 97,
+      "received": 97000
+    },
+    {
+      "at": "2026-06-03T15:09:21.293Z",
+      "acceptedBroadcasts": 98,
+      "received": 98000
+    },
+    {
+      "at": "2026-06-03T15:09:26.361Z",
+      "acceptedBroadcasts": 99,
+      "received": 99000
+    },
+    {
+      "at": "2026-06-03T15:09:31.414Z",
+      "acceptedBroadcasts": 100,
+      "received": 100000
+    },
+    {
+      "at": "2026-06-03T15:09:36.482Z",
+      "acceptedBroadcasts": 101,
+      "received": 101000
+    },
+    {
+      "at": "2026-06-03T15:09:41.555Z",
+      "acceptedBroadcasts": 102,
+      "received": 102000
+    },
+    {
+      "at": "2026-06-03T15:09:46.628Z",
+      "acceptedBroadcasts": 103,
+      "received": 103000
+    },
+    {
+      "at": "2026-06-03T15:09:51.697Z",
+      "acceptedBroadcasts": 104,
+      "received": 104000
+    },
+    {
+      "at": "2026-06-03T15:09:56.735Z",
+      "acceptedBroadcasts": 105,
+      "received": 105000
+    },
+    {
+      "at": "2026-06-03T15:10:01.806Z",
+      "acceptedBroadcasts": 106,
+      "received": 106000
+    },
+    {
+      "at": "2026-06-03T15:10:06.869Z",
+      "acceptedBroadcasts": 107,
+      "received": 107000
+    },
+    {
+      "at": "2026-06-03T15:10:11.913Z",
+      "acceptedBroadcasts": 108,
+      "received": 108000
+    },
+    {
+      "at": "2026-06-03T15:10:16.981Z",
+      "acceptedBroadcasts": 109,
+      "received": 109000
+    },
+    {
+      "at": "2026-06-03T15:10:22.044Z",
+      "acceptedBroadcasts": 110,
+      "received": 110000
+    },
+    {
+      "at": "2026-06-03T15:10:27.091Z",
+      "acceptedBroadcasts": 111,
+      "received": 111000
+    },
+    {
+      "at": "2026-06-03T15:10:32.142Z",
+      "acceptedBroadcasts": 112,
+      "received": 112000
+    },
+    {
+      "at": "2026-06-03T15:10:37.207Z",
+      "acceptedBroadcasts": 113,
+      "received": 113000
+    },
+    {
+      "at": "2026-06-03T15:10:42.273Z",
+      "acceptedBroadcasts": 114,
+      "received": 114000
+    },
+    {
+      "at": "2026-06-03T15:10:47.343Z",
+      "acceptedBroadcasts": 115,
+      "received": 115000
+    },
+    {
+      "at": "2026-06-03T15:10:52.407Z",
+      "acceptedBroadcasts": 116,
+      "received": 116000
+    },
+    {
+      "at": "2026-06-03T15:10:57.483Z",
+      "acceptedBroadcasts": 117,
+      "received": 117000
+    },
+    {
+      "at": "2026-06-03T15:11:02.559Z",
+      "acceptedBroadcasts": 118,
+      "received": 118000
+    },
+    {
+      "at": "2026-06-03T15:11:07.623Z",
+      "acceptedBroadcasts": 119,
+      "received": 119000
+    }
+  ]
+}

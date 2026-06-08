@@ -1,0 +1,3 @@
+CREATE DATABASE IF NOT EXISTS auction_shadow;
+GRANT ALL PRIVILEGES ON auction_shadow.* TO 'auction'@'%';
+FLUSH PRIVILEGES;

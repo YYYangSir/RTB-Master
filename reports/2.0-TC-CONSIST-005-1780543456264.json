@@ -1,0 +1,177 @@
+{
+  "caseId": "TC-CONSIST-005",
+  "status": "PASS",
+  "generatedAt": "2026-06-04T03:24:16.263Z",
+  "auctionId": "cmpyxlhiy00078zuvepmiyejl",
+  "apiWasRunning": false,
+  "mysqlContainer": "auction-mysql",
+  "docker": {
+    "stopOutput": "auction-mysql",
+    "startOutput": "auction-mysql"
+  },
+  "beforeFaultMysql": {
+    "currentPriceCent": 100,
+    "leaderUserId": "cmpyxlhhw00018zuvvhfsy12v",
+    "status": "RUNNING",
+    "version": 2,
+    "bidCount": 1,
+    "highestBidAmountCent": 100,
+    "highestBidUserId": "cmpyxlhhw00018zuvvhfsy12v",
+    "orderCount": 0,
+    "orderAmountCent": null
+  },
+  "beforeFaultRedis": {
+    "currentPriceCent": 100,
+    "leaderUserId": "cmpyxlhhw00018zuvvhfsy12v",
+    "status": "RUNNING",
+    "version": 2,
+    "leaderboardTopUserId": "cmpyxlhhw00018zuvvhfsy12v",
+    "leaderboardTopAmountCent": 100
+  },
+  "faultBid": {
+    "ok": false,
+    "status": 503,
+    "message": "服务繁忙，请稍后重试"
+  },
+  "redisDuringFault": {
+    "currentPriceCent": 100,
+    "leaderUserId": "cmpyxlhhw00018zuvvhfsy12v",
+    "status": "RUNNING",
+    "version": 2,
+    "leaderboardTopUserId": "cmpyxlhhw00018zuvvhfsy12v",
+    "leaderboardTopAmountCent": 100
+  },
+  "afterRecoveryMysql": {
+    "currentPriceCent": 100,
+    "leaderUserId": "cmpyxlhhw00018zuvvhfsy12v",
+    "status": "RUNNING",
+    "version": 2,
+    "bidCount": 1,
+    "highestBidAmountCent": 100,
+    "highestBidUserId": "cmpyxlhhw00018zuvvhfsy12v",
+    "orderCount": 0,
+    "orderAmountCent": null
+  },
+  "afterRecoveryRedis": {
+    "currentPriceCent": 100,
+    "leaderUserId": "cmpyxlhhw00018zuvvhfsy12v",
+    "status": "RUNNING",
+    "version": 2,
+    "leaderboardTopUserId": "cmpyxlhhw00018zuvvhfsy12v",
+    "leaderboardTopAmountCent": 100
+  },
+  "afterRecoveryHttp": {
+    "detailStatus": 200,
+    "currentPriceCent": 100,
+    "leaderUserId": "cmpyxlhhw00018zuvvhfsy12v",
+    "leaderboardTopAmountCent": 100,
+    "leaderboardTopUserId": "cmpyxlhhw00018zuvvhfsy12v"
+  },
+  "rejoinSnapshot": {
+    "auctionId": "cmpyxlhiy00078zuvepmiyejl",
+    "status": "RUNNING",
+    "currentPriceCent": 100,
+    "leaderUserId": "cmpyxlhhw00018zuvvhfsy12v",
+    "endAt": "2026-06-04T03:34:08.323Z",
+    "version": 2,
+    "seq": 2,
+    "incrementCent": 100,
+    "capPriceCent": 100000,
+    "extensionSec": 20,
+    "cancelReason": null,
+    "leaderboard": [
+      {
+        "rank": 1,
+        "userId": "cmpyxlhhw00018zuvvhfsy12v",
+        "amountCent": 100,
+        "nickname": "2.0 TC-CONSIST-005 用户 A"
+      }
+    ],
+    "participantCount": 1,
+    "serverTime": 1780543455397
+  },
+  "recoveryBid": {
+    "ok": true,
+    "status": 201,
+    "message": null
+  },
+  "finalMysql": {
+    "currentPriceCent": 300,
+    "leaderUserId": "cmpyxlhi800038zuvxchvz2p5",
+    "status": "RUNNING",
+    "version": 3,
+    "bidCount": 2,
+    "highestBidAmountCent": 300,
+    "highestBidUserId": "cmpyxlhi800038zuvxchvz2p5",
+    "orderCount": 0,
+    "orderAmountCent": null
+  },
+  "finalRedis": {
+    "currentPriceCent": 300,
+    "leaderUserId": "cmpyxlhi800038zuvxchvz2p5",
+    "status": "RUNNING",
+    "version": 3,
+    "leaderboardTopUserId": "cmpyxlhi800038zuvxchvz2p5",
+    "leaderboardTopAmountCent": 300
+  },
+  "finalHttp": {
+    "detailStatus": 200,
+    "currentPriceCent": 300,
+    "leaderUserId": "cmpyxlhi800038zuvxchvz2p5",
+    "leaderboardTopAmountCent": 300,
+    "leaderboardTopUserId": "cmpyxlhi800038zuvxchvz2p5"
+  },
+  "finalSocketBroadcast": {
+    "auctionId": "cmpyxlhiy00078zuvepmiyejl",
+    "status": "RUNNING",
+    "currentPriceCent": 300,
+    "leaderUserId": "cmpyxlhi800038zuvxchvz2p5",
+    "endAt": "2026-06-04T03:34:08.323Z",
+    "version": 3,
+    "seq": 3,
+    "incrementCent": 100,
+    "capPriceCent": 100000,
+    "extensionSec": 20,
+    "cancelReason": null,
+    "leaderboard": [
+      {
+        "rank": 1,
+        "userId": "cmpyxlhi800038zuvxchvz2p5",
+        "amountCent": 300,
+        "nickname": "2.0 TC-CONSIST-005 用户 C"
+      },
+      {
+        "rank": 2,
+        "userId": "cmpyxlhhw00018zuvvhfsy12v",
+        "amountCent": 100,
+        "nickname": "2.0 TC-CONSIST-005 用户 A"
+      }
+    ],
+    "participantCount": 2,
+    "serverTime": 1780543455421,
+    "bid": {
+      "id": "cmpyxln07000b8zuvhkudk9jo",
+      "auctionId": "cmpyxlhiy00078zuvepmiyejl",
+      "userId": "cmpyxlhi800038zuvxchvz2p5",
+      "requestId": "633102c9-4bb2-4921-a745-e907a9c1e045",
+      "amountCent": 300,
+      "createdAt": "2026-06-04T03:24:15.415Z"
+    },
+    "order": null
+  },
+  "checks": {
+    "initialBidOk": true,
+    "faultBidRejected": true,
+    "redisNotAdvancedDuringFault": true,
+    "mysqlNotDirtyAfterRecovery": true,
+    "backendConsistentAfterRecovery": true,
+    "httpConsistentAfterRecovery": true,
+    "rejoinSnapshotConsistent": true,
+    "recoveryBidOk": true,
+    "backendConsistentFinal": true,
+    "httpConsistentFinal": true,
+    "wsBroadcastConsistentFinal": true,
+    "noWrongOrder": true,
+    "healthAfter": true
+  }
+}

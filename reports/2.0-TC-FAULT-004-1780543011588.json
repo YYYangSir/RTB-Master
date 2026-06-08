@@ -1,0 +1,77 @@
+{
+  "caseId": "TC-FAULT-004",
+  "status": "PASS",
+  "generatedAt": "2026-06-04T03:16:51.587Z",
+  "auctionId": "cmpyxc3pq00068zy11usm8u5a",
+  "apiWasRunning": false,
+  "injection": "AUCTION_TEST_FAIL_ORDER_CREATE=1",
+  "preBid": {
+    "ok": true,
+    "status": 201,
+    "currentPriceCent": 900
+  },
+  "beforeFailureMysql": {
+    "currentPriceCent": 900,
+    "leaderUserId": "cmpyxc3oy00018zy1gqfhqebm",
+    "status": "RUNNING",
+    "version": 2,
+    "bidCount": 1,
+    "highestBidAmountCent": 900,
+    "highestBidUserId": "cmpyxc3oy00018zy1gqfhqebm",
+    "orderCount": 0,
+    "orderAmountCent": null,
+    "orderWinnerUserId": null
+  },
+  "beforeFailureRedis": {
+    "currentPriceCent": 900,
+    "leaderUserId": "cmpyxc3oy00018zy1gqfhqebm",
+    "status": "RUNNING",
+    "version": 2,
+    "leaderboardTopUserId": "cmpyxc3oy00018zy1gqfhqebm",
+    "leaderboardTopAmountCent": 900
+  },
+  "capBid": {
+    "ok": false,
+    "status": 500,
+    "message": "Internal server error"
+  },
+  "mysql": {
+    "currentPriceCent": 900,
+    "leaderUserId": "cmpyxc3oy00018zy1gqfhqebm",
+    "status": "RUNNING",
+    "version": 2,
+    "bidCount": 1,
+    "highestBidAmountCent": 900,
+    "highestBidUserId": "cmpyxc3oy00018zy1gqfhqebm",
+    "orderCount": 0,
+    "orderAmountCent": null,
+    "orderWinnerUserId": null
+  },
+  "redis": {
+    "currentPriceCent": 900,
+    "leaderUserId": "cmpyxc3oy00018zy1gqfhqebm",
+    "status": "RUNNING",
+    "version": 2,
+    "leaderboardTopUserId": "cmpyxc3oy00018zy1gqfhqebm",
+    "leaderboardTopAmountCent": 900
+  },
+  "http": {
+    "ok": true,
+    "statusCode": 200,
+    "currentPriceCent": 900,
+    "leaderUserId": "cmpyxc3oy00018zy1gqfhqebm",
+    "status": "RUNNING",
+    "hasOrder": false,
+    "leaderboardTopUserId": "cmpyxc3oy00018zy1gqfhqebm",
+    "leaderboardTopAmountCent": 900
+  },
+  "checks": {
+    "capBidRejected": true,
+    "soldWithoutOrder": false,
+    "redisMysqlDiverged": false,
+    "httpShowsFalseSold": false,
+    "noDuplicateOrder": true,
+    "acceptableFailureState": true,
+    "healthAfter": true
+  }
+}

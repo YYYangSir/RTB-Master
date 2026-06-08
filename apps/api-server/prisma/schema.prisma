@@ -1,0 +1,114 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider          = "mysql"
+  url               = env("DATABASE_URL")
+  shadowDatabaseUrl = env("SHADOW_DATABASE_URL")
+}
+
+enum UserRole {
+  ADMIN
+  BIDDER
+}
+
+enum LiveRoomStatus {
+  OFFLINE
+  LIVE
+}
+
+enum AuctionStatus {
+  DRAFT
+  SCHEDULED
+  RUNNING
+  SOLD
+  UNSOLD
+  CANCELLED
+}
+
+enum OrderStatus {
+  PENDING_PAYMENT
+  PAID
+}
+
+model User {
+  id         String    @id @default(cuid())
+  nickname   String
+  role       UserRole  @default(BIDDER)
+  bids       Bid[]
+  wonOrders  Order[]   @relation("WinnerOrders")
+  createdAt  DateTime  @default(now())
+  updatedAt  DateTime  @updatedAt
+}
+
+model Product {
+  id          String    @id @default(cuid())
+  name        String
+  description String    @db.Text
+  imageUrl    String?
+  auctions    Auction[]
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+}
+
+model LiveRoom {
+  id        String          @id @default(cuid())
+  title     String
+  status    LiveRoomStatus  @default(OFFLINE)
+  auctions  Auction[]
+  createdAt DateTime        @default(now())
+  updatedAt DateTime        @updatedAt
+}
+
+model Auction {
+  id                 String         @id @default(cuid())
+  productId          String
+  liveRoomId         String
+  status             AuctionStatus  @default(DRAFT)
+  startPriceCent     Int
+  incrementCent      Int
+  capPriceCent       Int
+  currentPriceCent   Int
+  leaderUserId       String?
+  startAt            DateTime?
+  endAt              DateTime?
+  durationSec        Int
+  extensionWindowSec Int            @default(10)
+  extensionSec       Int            @default(20)
+  cancelReason       String?
+  version            Int            @default(0)
+  product            Product        @relation(fields: [productId], references: [id])
+  liveRoom           LiveRoom       @relation(fields: [liveRoomId], references: [id])
+  bids               Bid[]
+  order              Order?
+  createdAt          DateTime       @default(now())
+  updatedAt          DateTime       @updatedAt
+
+  @@index([liveRoomId, status])
+}
+
+model Bid {
+  id         String   @id @default(cuid())
+  auctionId  String
+  userId     String
+  requestId  String   @unique
+  amountCent Int
+  auction    Auction  @relation(fields: [auctionId], references: [id])
+  user       User     @relation(fields: [userId], references: [id])
+  createdAt  DateTime @default(now())
+
+  @@index([auctionId, createdAt])
+}
+
+model Order {
+  id           String       @id @default(cuid())
+  auctionId    String       @unique
+  winnerUserId String
+  amountCent   Int
+  status       OrderStatus  @default(PENDING_PAYMENT)
+  auction      Auction      @relation(fields: [auctionId], references: [id])
+  winner       User         @relation("WinnerOrders", fields: [winnerUserId], references: [id])
+  createdAt    DateTime     @default(now())
+  updatedAt    DateTime     @updatedAt
+}

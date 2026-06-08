@@ -1,0 +1,28 @@
+{
+  "name": "admin-web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite --port 5173",
+    "build": "tsc -b && vite build",
+    "lint": "eslint \"src/**/*.{ts,tsx}\"",
+    "test": "echo \"admin-web tests not added yet\""
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "antd": "latest",
+    "axios": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "socket.io-client": "latest",
+    "zustand": "latest"
+  },
+  "devDependencies": {
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "eslint": "latest",
+    "typescript": "latest",
+    "vite": "latest"
+  }
+}
+

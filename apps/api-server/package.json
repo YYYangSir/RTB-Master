@@ -1,0 +1,40 @@
+{
+  "name": "api-server",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "nest start --watch",
+    "build": "nest build",
+    "lint": "eslint \"src/**/*.ts\"",
+    "test": "jest --config jest.config.cjs --runInBand",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev",
+    "prisma:studio": "prisma studio"
+  },
+  "dependencies": {
+    "@nestjs/common": "latest",
+    "@nestjs/core": "latest",
+    "@nestjs/platform-express": "latest",
+    "@nestjs/platform-socket.io": "latest",
+    "@nestjs/websockets": "latest",
+    "@prisma/client": "6.19.0",
+    "class-transformer": "latest",
+    "class-validator": "latest",
+    "ioredis": "latest",
+    "reflect-metadata": "latest",
+    "rxjs": "latest",
+    "socket.io": "latest"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "latest",
+    "@nestjs/schematics": "latest",
+    "@nestjs/testing": "latest",
+    "@types/node": "latest",
+    "eslint": "latest",
+    "jest": "latest",
+    "prisma": "6.19.0",
+    "ts-jest": "latest",
+    "ts-node": "latest",
+    "typescript": "latest"
+  }
+}

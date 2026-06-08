@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Build output
+dist/
+coverage/
+.vite/
+*.tsbuildinfo
+
+# Logs
+*.log
+logs/
+
+# Local databases and runtime files
+*.db
+*.sqlite
+*.sqlite3
+tmp/
+
+# Editor and OS files
+.DS_Store
+.idea/
+.vscode/
+
+# Personal files and generated media
+*.docx
+*.pdf
+*.mov
+*.mp4
+*.png
+*.jpg
+*.jpeg

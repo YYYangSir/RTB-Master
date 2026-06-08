@@ -1,0 +1,107 @@
+{
+  "caseId": "TC-CONSIST-003",
+  "status": "PASS",
+  "generatedAt": "2026-06-04T09:26:08.542Z",
+  "auctionId": "cmpzaizvd00078znjzrnhysj6",
+  "apiWasRunning": false,
+  "bidA": {
+    "ok": true,
+    "status": 201,
+    "latencyMs": 13.94
+  },
+  "bidB": {
+    "ok": true,
+    "status": 201,
+    "latencyMs": 16.98
+  },
+  "beforeCancelMysql": {
+    "currentPriceCent": 200,
+    "leaderUserId": "cmpzaizug00028znjw4ojc4q8",
+    "status": "RUNNING",
+    "version": 3,
+    "cancelReason": null,
+    "bidCount": 2,
+    "highestBidAmountCent": 200,
+    "highestBidUserId": "cmpzaizug00028znjw4ojc4q8",
+    "orderCount": 0,
+    "orderAmountCent": null,
+    "orderWinnerUserId": null
+  },
+  "cancel": {
+    "ok": true,
+    "status": 201,
+    "latencyMs": 38.96
+  },
+  "afterCancelBid": {
+    "ok": false,
+    "status": 400,
+    "message": "auction is not running"
+  },
+  "mysql": {
+    "currentPriceCent": 200,
+    "leaderUserId": "cmpzaizug00028znjw4ojc4q8",
+    "status": "CANCELLED",
+    "version": 4,
+    "cancelReason": "TC-CONSIST-003 取消竞拍一致性测试",
+    "bidCount": 2,
+    "highestBidAmountCent": 200,
+    "highestBidUserId": "cmpzaizug00028znjw4ojc4q8",
+    "orderCount": 0,
+    "orderAmountCent": null,
+    "orderWinnerUserId": null
+  },
+  "redis": {
+    "currentPriceCent": 200,
+    "leaderUserId": "cmpzaizug00028znjw4ojc4q8",
+    "status": "CANCELLED",
+    "version": 4,
+    "cancelReason": "TC-CONSIST-003 取消竞拍一致性测试",
+    "leaderboardTopUserId": "cmpzaizug00028znjw4ojc4q8",
+    "leaderboardTopAmountCent": 200
+  },
+  "http": {
+    "detailStatus": 200,
+    "currentPriceCent": 200,
+    "leaderUserId": "cmpzaizug00028znjw4ojc4q8",
+    "status": "CANCELLED",
+    "cancelReason": "TC-CONSIST-003 取消竞拍一致性测试",
+    "orderAmountCent": null,
+    "orderWinnerUserId": null,
+    "leaderboardTopAmountCent": 200,
+    "leaderboardTopUserId": "cmpzaizug00028znjw4ojc4q8"
+  },
+  "websocket": {
+    "bidAcceptedEvents": 2,
+    "auctionCancelledEvents": 1,
+    "currentPriceCent": 200,
+    "leaderUserId": "cmpzaizug00028znjw4ojc4q8",
+    "status": "CANCELLED",
+    "cancelReason": "TC-CONSIST-003 取消竞拍一致性测试",
+    "leaderboardTopAmountCent": 200,
+    "leaderboardTopUserId": "cmpzaizug00028znjw4ojc4q8"
+  },
+  "refreshSnapshot": {
+    "connected": true,
+    "currentPriceCent": 200,
+    "leaderUserId": "cmpzaizug00028znjw4ojc4q8",
+    "status": "CANCELLED",
+    "cancelReason": "TC-CONSIST-003 取消竞拍一致性测试",
+    "leaderboardTopAmountCent": 200,
+    "leaderboardTopUserId": "cmpzaizug00028znjw4ojc4q8"
+  },
+  "checks": {
+    "initialBidsOk": true,
+    "beforeCancelRunning": true,
+    "cancelOk": true,
+    "afterCancelBidRejected": true,
+    "statusAllCancelled": true,
+    "noOrder": true,
+    "historicalBidKept": true,
+    "priceAndLeaderKept": true,
+    "cancelReasonConsistent": true,
+    "websocketCancelReceived": true,
+    "refreshSnapshotOk": true,
+    "httpOk": true,
+    "healthAfter": true
+  }
+}

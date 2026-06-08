@@ -1,0 +1,81 @@
+{
+  "caseId": "TC-CONSIST-004",
+  "status": "PASS",
+  "generatedAt": "2026-06-03T14:19:44.881Z",
+  "auctionId": "cmpy5jips00078zgm50csh7za",
+  "apiWasRunning": false,
+  "expectedExtensions": 2,
+  "extensionSec": 20,
+  "extensionWindowSec": 10,
+  "extensionRecords": [
+    {
+      "beforeEndAt": "2026-06-03T14:19:32.306Z",
+      "afterEndAt": "2026-06-03T14:19:52.306Z",
+      "beforeRemainingMs": 8941,
+      "deltaMs": 20000,
+      "extended": true,
+      "currentPriceCent": 100,
+      "leaderUserId": "cmpy5jios00018zgmo02papom"
+    },
+    {
+      "beforeEndAt": "2026-06-03T14:19:52.306Z",
+      "afterEndAt": "2026-06-03T14:20:12.306Z",
+      "beforeRemainingMs": 8954,
+      "deltaMs": 20000,
+      "extended": true,
+      "currentPriceCent": 200,
+      "leaderUserId": "cmpy5jioz00028zgmqqg7d598"
+    }
+  ],
+  "wsExtensionEvents": [
+    {
+      "endAt": "2026-06-03T14:19:52.306Z",
+      "currentPriceCent": 100,
+      "leaderUserId": "cmpy5jios00018zgmo02papom"
+    },
+    {
+      "endAt": "2026-06-03T14:20:12.306Z",
+      "currentPriceCent": 200,
+      "leaderUserId": "cmpy5jioz00028zgmqqg7d598"
+    }
+  ],
+  "wsEndedEvents": 0,
+  "mysql": {
+    "endAt": "2026-06-03T14:20:12.306Z",
+    "currentPriceCent": 200,
+    "leaderUserId": "cmpy5jioz00028zgmqqg7d598",
+    "status": "RUNNING"
+  },
+  "redis": {
+    "endAt": "2026-06-03T14:20:12.306Z",
+    "currentPriceCent": 200,
+    "leaderUserId": "cmpy5jioz00028zgmqqg7d598",
+    "status": "RUNNING",
+    "leaderboardTopUserId": "cmpy5jioz00028zgmqqg7d598",
+    "leaderboardTopAmountCent": 200
+  },
+  "http": {
+    "endAt": "2026-06-03T14:20:12.306Z",
+    "currentPriceCent": 200,
+    "leaderUserId": "cmpy5jioz00028zgmqqg7d598",
+    "status": "RUNNING",
+    "leaderboardTopUserId": "cmpy5jioz00028zgmqqg7d598",
+    "leaderboardTopAmountCent": 200
+  },
+  "websocket": {
+    "endAt": "2026-06-03T14:20:12.306Z",
+    "currentPriceCent": 200,
+    "leaderUserId": "cmpy5jioz00028zgmqqg7d598",
+    "status": "RUNNING",
+    "leaderboardTopUserId": "cmpy5jioz00028zgmqqg7d598",
+    "leaderboardTopAmountCent": 200
+  },
+  "checks": {
+    "allExtensionsCorrect": true,
+    "wsExtensionEventCountCorrect": true,
+    "endAtConsistent": true,
+    "priceConsistent": true,
+    "leaderConsistent": true,
+    "notEndedEarly": true
+  }
+}

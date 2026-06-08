@@ -1,0 +1,108 @@
+{
+  "caseId": "TC-WS1000-001",
+  "status": "PASS",
+  "generatedAt": "2026-06-03T14:42:10.656Z",
+  "auctionId": "cmpy60pqg00048z3cp15t73r4",
+  "apiWasRunning": false,
+  "wsCount": 1000,
+  "minutes": 10,
+  "reconnectBatch": 50,
+  "initialConnected": 1000,
+  "initialSnapshots": 1000,
+  "initialConnectionRate": 1,
+  "connectionDurationMs": 1072.44,
+  "finalConnected": 1000,
+  "holdRate": 1,
+  "reconnectAttempts": 450,
+  "reconnectSuccess": 450,
+  "reconnectRate": 1,
+  "disconnectEvents": 450,
+  "healthAfterHold": true,
+  "samples": [
+    {
+      "at": "2026-06-03T14:33:10.638Z",
+      "connected": 1000
+    },
+    {
+      "at": "2026-06-03T14:33:15.743Z",
+      "connected": 1000,
+      "afterReconnect": true
+    },
+    {
+      "at": "2026-06-03T14:34:15.745Z",
+      "connected": 1000
+    },
+    {
+      "at": "2026-06-03T14:34:20.815Z",
+      "connected": 1000,
+      "afterReconnect": true
+    },
+    {
+      "at": "2026-06-03T14:35:20.817Z",
+      "connected": 1000
+    },
+    {
+      "at": "2026-06-03T14:35:25.895Z",
+      "connected": 1000,
+      "afterReconnect": true
+    },
+    {
+      "at": "2026-06-03T14:36:25.898Z",
+      "connected": 1000
+    },
+    {
+      "at": "2026-06-03T14:36:30.966Z",
+      "connected": 1000,
+      "afterReconnect": true
+    },
+    {
+      "at": "2026-06-03T14:37:30.967Z",
+      "connected": 1000
+    },
+    {
+      "at": "2026-06-03T14:37:36.055Z",
+      "connected": 1000,
+      "afterReconnect": true
+    },
+    {
+      "at": "2026-06-03T14:38:36.057Z",
+      "connected": 1000
+    },
+    {
+      "at": "2026-06-03T14:38:41.142Z",
+      "connected": 1000,
+      "afterReconnect": true
+    },
+    {
+      "at": "2026-06-03T14:39:41.143Z",
+      "connected": 1000
+    },
+    {
+      "at": "2026-06-03T14:39:46.216Z",
+      "connected": 1000,
+      "afterReconnect": true
+    },
+    {
+      "at": "2026-06-03T14:40:46.218Z",
+      "connected": 1000
+    },
+    {
+      "at": "2026-06-03T14:40:51.300Z",
+      "connected": 1000,
+      "afterReconnect": true
+    },
+    {
+      "at": "2026-06-03T14:41:51.302Z",
+      "connected": 1000
+    },
+    {
+      "at": "2026-06-03T14:41:56.380Z",
+      "connected": 1000,
+      "afterReconnect": true
+    },
+    {
+      "at": "2026-06-03T14:42:10.638Z",
+      "connected": 1000
+    }
+  ]
+}

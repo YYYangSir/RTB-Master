@@ -1,0 +1,115 @@
+{
+  "caseId": "TC-FAULT-002",
+  "status": "FAIL",
+  "generatedAt": "2026-06-03T15:52:15.338Z",
+  "auctionId": "cmpy8vj8r00078zushrvqjkmr",
+  "apiWasRunning": false,
+  "mysqlContainer": "auction-mysql",
+  "docker": {
+    "stopOutput": "auction-mysql",
+    "startOutput": "auction-mysql"
+  },
+  "initialBid": {
+    "ok": true,
+    "status": 201,
+    "latencyMs": 11.66
+  },
+  "beforeFaultMysql": {
+    "currentPriceCent": 100,
+    "leaderUserId": "cmpy8vj8000018zusbehcbzxq",
+    "status": "RUNNING",
+    "version": 2,
+    "bidCount": 1,
+    "highestBidAmountCent": 100,
+    "highestBidUserId": "cmpy8vj8000018zusbehcbzxq",
+    "orderCount": 0,
+    "orderAmountCent": null,
+    "orderWinnerUserId": null
+  },
+  "beforeFaultRedis": {
+    "currentPriceCent": 100,
+    "leaderUserId": "cmpy8vj8000018zusbehcbzxq",
+    "status": "RUNNING",
+    "version": 2,
+    "leaderboardTopUserId": "cmpy8vj8000018zusbehcbzxq",
+    "leaderboardTopAmountCent": 100
+  },
+  "faultBid": {
+    "ok": false,
+    "status": "CLIENT_ERROR",
+    "latencyMs": 1.56,
+    "message": "fetch failed"
+  },
+  "redisDuringFault": {
+    "currentPriceCent": 100,
+    "leaderUserId": "cmpy8vj8000018zusbehcbzxq",
+    "status": "RUNNING",
+    "version": 2,
+    "leaderboardTopUserId": "cmpy8vj8000018zusbehcbzxq",
+    "leaderboardTopAmountCent": 100
+  },
+  "afterRecoveryMysql": {
+    "currentPriceCent": 100,
+    "leaderUserId": "cmpy8vj8000018zusbehcbzxq",
+    "status": "RUNNING",
+    "version": 2,
+    "bidCount": 1,
+    "highestBidAmountCent": 100,
+    "highestBidUserId": "cmpy8vj8000018zusbehcbzxq",
+    "orderCount": 0,
+    "orderAmountCent": null,
+    "orderWinnerUserId": null
+  },
+  "afterRecoveryRedis": {
+    "currentPriceCent": 100,
+    "leaderUserId": "cmpy8vj8000018zusbehcbzxq",
+    "status": "RUNNING",
+    "version": 2,
+    "leaderboardTopUserId": "cmpy8vj8000018zusbehcbzxq",
+    "leaderboardTopAmountCent": 100
+  },
+  "recoveryBid": {
+    "ok": false,
+    "status": "CLIENT_ERROR",
+    "latencyMs": 3.24,
+    "message": "fetch failed"
+  },
+  "finalMysql": {
+    "currentPriceCent": 100,
+    "leaderUserId": "cmpy8vj8000018zusbehcbzxq",
+    "status": "RUNNING",
+    "version": 2,
+    "bidCount": 1,
+    "highestBidAmountCent": 100,
+    "highestBidUserId": "cmpy8vj8000018zusbehcbzxq",
+    "orderCount": 0,
+    "orderAmountCent": null,
+    "orderWinnerUserId": null
+  },
+  "finalRedis": {
+    "currentPriceCent": 100,
+    "leaderUserId": "cmpy8vj8000018zusbehcbzxq",
+    "status": "RUNNING",
+    "version": 2,
+    "leaderboardTopUserId": "cmpy8vj8000018zusbehcbzxq",
+    "leaderboardTopAmountCent": 100
+  },
+  "finalHttp": {
+    "ok": false,
+    "statusCode": "CLIENT_ERROR",
+    "currentPriceCent": null,
+    "leaderUserId": null,
+    "leaderboardTopUserId": null,
+    "leaderboardTopAmountCent": null
+  },
+  "checks": {
+    "noFalseSuccess": true,
+    "redisAdvancedDuringMysqlFault": false,
+    "mysqlChangedDuringFaultAfterRecovery": false,
+    "inconsistentAfterRecovery": false,
+    "recoveryBidOk": false,
+    "finalConsistent": false,
+    "noWrongOrder": true,
+    "healthAfter": false
+  }
+}
