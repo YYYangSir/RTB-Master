@@ -13,7 +13,7 @@
 | 演示视频链接 | https://my.feishu.cn/file/IGuHbFBDjoK9aNxD1IPcdWj9nah?from=from_copylink |
 | 代码仓库 | https://github.com/YYYangSir/RTB-Master |
 | 主分支 | `main` |
-| 最后提交记录 | `a6e9792 docs: add local demo guide link` |
+| 最后提交记录 | https://github.com/YYYangSir/RTB-Master/commits/main |
 
 ## 2. 核心功能
 
