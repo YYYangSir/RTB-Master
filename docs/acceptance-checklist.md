@@ -7,7 +7,7 @@
 | 项目名称 | 「实时竞拍大师」—— 抖音电商直播竞拍全栈系统设计与实现 |
 | 团队名称 | 杨子研—北京邮电大学—个人组队 |
 | 成员姓名 | 杨子研 |
-| 学校和专业 | 北京邮电大学；专业待补充 |
+| 学校和专业 | 北京邮电大学；人工智能专业 |
 | 团队分工 | 个人组队，负责项目设计、前后端、数据层、测试验证、文档与演示材料 |
 | 在线 Demo 链接 | https://my.feishu.cn/docx/BAfJdZ8odoVn9FxPPw5c0pnon2e?from=from_copylink |
 | 演示视频链接 | https://my.feishu.cn/file/IGuHbFBDjoK9aNxD1IPcdWj9nah?from=from_copylink |

@@ -60,6 +60,8 @@ flowchart LR
   S --> M["MySQL + Prisma<br/>商品 / 出价流水 / 订单"]
 ```
 
+架构图 PNG：[docs/system-architecture.png](docs/system-architecture.png)。
+
 详细说明见 [docs/architecture.md](docs/architecture.md)。
 
 ## 目录结构
@@ -170,6 +172,8 @@ Redis Lua 优化后，本机单实例结果：
 
 ## 文档入口
 
+- [本地 Demo 使用说明](docs/local-demo-guide.md)
+- [系统架构图 PNG](docs/system-architecture.png)
 - [正式演示脚本](docs/demo-script.md)
 - [系统架构说明](docs/architecture.md)
 - [验收清单](docs/acceptance-checklist.md)

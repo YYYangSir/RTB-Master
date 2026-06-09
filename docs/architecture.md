@@ -13,6 +13,8 @@
 
 ## 2. 总体架构
 
+PNG 版本位置：[system-architecture.png](system-architecture.png)
+
 ```mermaid
 flowchart LR
   A["主播后台<br/>React + Vite"] --> API["NestJS REST API"]

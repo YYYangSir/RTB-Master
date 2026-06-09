@@ -34,5 +34,6 @@ tmp/
 *.mov
 *.mp4
 *.png
+!docs/system-architecture.png
 *.jpg
 *.jpeg
