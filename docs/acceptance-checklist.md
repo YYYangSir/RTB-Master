@@ -1,17 +1,19 @@
 # 正式验收清单
 
-## 1. 待填写信息
+## 1. 提交信息
 
 | 项目 | 内容 |
 |---|---|
-| 项目名称 | 抖音电商直播竞拍全栈系统 |
-| 团队名称 | 待填写 |
-| 成员姓名 | 待填写 |
-| 学校和专业 | 待填写 |
-| 团队分工 | 待填写 |
+| 项目名称 | 「实时竞拍大师」—— 抖音电商直播竞拍全栈系统设计与实现 |
+| 团队名称 | 杨子研—北京邮电大学—个人组队 |
+| 成员姓名 | 杨子研 |
+| 学校和专业 | 北京邮电大学；专业待补充 |
+| 团队分工 | 个人组队，负责项目设计、前后端、数据层、测试验证、文档与演示材料 |
 | 在线 Demo 链接 | https://my.feishu.cn/docx/BAfJdZ8odoVn9FxPPw5c0pnon2e?from=from_copylink |
 | 演示视频链接 | https://my.feishu.cn/file/IGuHbFBDjoK9aNxD1IPcdWj9nah?from=from_copylink |
-| 代码仓库 | 如需提交，必须先确认不包含任何真实密钥 |
+| 代码仓库 | https://github.com/YYYangSir/RTB-Master |
+| 主分支 | `main` |
+| 最后提交记录 | `a6e9792 docs: add local demo guide link` |
 
 ## 2. 核心功能
 
